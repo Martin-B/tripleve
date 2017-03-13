@@ -1,0 +1,30 @@
+# Images #
+###################
+*.jpeg
+*.jpg
+*.png
+
+# Videos #
+###################
+*.avi
+*.mov
+*.mp4
+*.MP4
+
+# Database & backups #
+###################
+*.sql
+*.bd
+
+# Specific folders #
+###################
+stats/
+
+
+# Settings files
+###################
+wp-config.php
+listes/config/config.php
+listes/config/
+listes/config/*
+sendy/includes/config.php
