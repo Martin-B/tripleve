@@ -1,0 +1,171 @@
+/* Client-specific Styles */
+			#outlook a{padding:0;} /* Force Outlook to provide a "view in browser" button. */
+			body{width:100% !important;} /* Force Hotmail to display emails at full width */
+			body{-webkit-text-size-adjust:none;} /* Prevent Webkit platforms from changing default text sizes. */
+
+			/* Reset Styles */
+			body{margin:0; padding:0;background:url(http://www.tripleve.com/gabarits/images/courriel/ui/bg-noir-top-courriel.gif) repeat-x scroll 0 0 #baa963; background-color:#baa963;}
+			
+			div.body{-webkit-text-size-adjust:none;margin:0; padding:0;background:url(http://www.tripleve.com/gabarits/images/courriel/ui/bg-noir-top-courriel.gif) repeat-x scroll 0 0 #baa963;background-color:#baa963;}
+			img{border:none;  height:auto; line-height:100%; outline:none; border:none;}
+			#backgroundTable{height:100% !important; margin:0; padding:0; width:100% !important;}
+
+			body, #backgroundTable{}
+			/* Pour que la couleur de fond se répète dans les lecteurs en ligne */
+			td.backgroundCell{padding:0;background:url(http://www.tripleve.com/gabarits/images/courriel/ui/bg-noir-top-courriel.gif) repeat-x scroll 0 0 #baa963;background-color:#baa963;}
+
+			#templateContainer{
+				 border: none;
+			}
+
+			#templatePreheader{
+				 background-color:#FAFAFA;
+			}
+
+			td.preheaderContent div{
+				 color:#505050;
+				 font-family:Arial;
+				 font-size:10px;
+				 line-height:100%;
+				 text-align:left;
+			}
+
+			td.preheaderContent div a:link, .preheaderContent div a:visited{}
+			#templateHeader{}
+			td.headerContent{}
+			td.headerContent a:link, .headerContent a:visited{}
+
+			#headerImage{
+				height:175px;
+				max-width:580px !important;
+				
+			}
+
+			/* /\/\/\/\/\/\/\/\/\/\ STANDARD STYLING: MAIN BODY /\/\/\/\/\/\/\/\/\/\ */
+			#templateContainer, .bodyContent{background-color:#FFFFFF;}
+			table#templateBody{margin-bottom:50px;}
+
+			/* /\/\/\/\/\/\/\/\/\/\ STANDARD STYLING: FOOTER /\/\/\/\/\/\/\/\/\/\ */
+
+			#templateFooter{
+				 background-color:#FDFDFD;
+				 border-top:0;
+			}
+
+
+			td.footerContent div a:link, td.footerContent div a:visited{}
+
+			
+			/* DEBUT des  styles TripLevé */
+			
+			a, a:link, a:active, a:hover, a:visited{color:#0066cc; text-decoration:underline;}
+			.suivre-lien-bleu{ font-size:11px; font-weight:bold; padding: 0 9px 0  0; background:url(http://www.tripleve.com/gabarits/images/courriel/ui/fleche-liens-suivre.gif) no-repeat 100% 0.35em scroll;color:#0066cc;line-height:1.6em; }
+			a.suivre-lien-bleu-toutes{ font-size:12px; font-weight:bold; padding: 0 11px 0  0; background:url(http://www.tripleve.com/gabarits/images/courriel/ui/fleche-liens-suivre.gif) no-repeat 100% 0.35em scroll;color:#0066cc; line-height:1.6em; text-decoration:none; }
+			
+			
+			.date{color:#cc0000;font-size:11px;}
+			/* .date{color:#666600;font-size:11px; font-weight:bold;} */
+			.activite{color:#000; font-size:13px; font-weight:bold;}
+			.lieu{color:#665B52; font-size:11px;}
+			.couts{color:#999999;  font-size:11px;}
+			.qui{color:#000000;font-size:11px;}
+			.quoi-plus{color:#000000;font-size:11px;}
+			
+			.lieu, .qui, .quoi-plus{font-size:11px;}
+			.description{font-size:12px; font-weight:normal; clear:both; display:block;}
+			
+			div.separateur-ssection{height:1px; margin:10px 0; border-bottom:1px dotted #CCCCCC;}
+			
+			
+			div#display-online-links{font-size:11px; color:#cccccc; background-color:#404040; height:32px;padding:4px 0 0 0;}
+			div#display-online-links a{color:#3399ff; font-size:11px;}
+			div#title-zone{padding:12px 0 0 15px;}
+			div#title-zone h1{color:666633; font-size:18px;line-height:18px;padding:0; margin:0;}
+			div#title-zone p.edition{color:#660000; font-size:11px; font-weight:bold;}
+			div#title-zone p{padding:0; line-height:1.2em;margin:0 0 0 0;}
+			div#title-zone p.liens{margin:6px 0 0 0;}
+			div#title-zone p.liens a img{border:none;margin:none;clear:none;}
+			
+			td.headerContent{padding:0 10px;font-family:Arial;}
+			div.head-image-description{font-size:10px; color : #999999; background-color: #f2f1ee; padding:4px;}
+			
+			/* DEBUT corps message */
+			img.separateur-section{width:580px;height:7px; margin:3px 0; border:none;}
+			
+			table#templateBody{}
+			td.bodyContent{
+				padding:15px 10px 0 10px;
+				font-family:Arial;
+				font-size:11px;
+			}
+			
+			
+			table.section{margin:8px 10px; width:560px;}
+			table.section td{border:0;}
+			table.section h2,table.section h3,table.section h4 {padding:0; margin:0 0 1.1em 0;}
+			
+
+			table.derniere-minute h1,
+			table.derniere-minute h2,
+			table.derniere-minute h3{font-size:17px; /*color:#757575;*/  color:#5D410F;}
+			table.derniere-minute .activite{ font-size:13px; font-weight:bold; color:#333333;}
+			
+
+			table.activites-a-venir h1,
+			table.activites-a-venir h2,
+			table.activites-a-venir h3{font-size:17px; /* color:#ff6600; */ color:#5D410F;}
+			
+			table.activites-en-planification h1,
+			table.activites-en-planification h2,
+			table.activites-en-planification h3{font-size:17px;/* color:#006600;*/  color:#5D410F;}
+			
+			/* Prototype activité avec image */
+			table.activite-image{margin:0 0 15px 0;}
+			table.activite-image td.gch{widht:150px;}
+			table.activite-image td.gch img{width:150px; height:150px; border:1px solid #757575}
+			table.activite-image td.drt{padding: 0 0 0 10px;}
+			
+			
+			/* Formations */
+			table.formations h1,
+			table.formations h2,
+			table.formations h3{font-size:17px; /*color:#006600;*/  color:#5D410F;}
+			
+			table.formation-sur-demande{margin:0 0 15px 0;}
+			table.formation-sur-demande h1,
+			table.formation-sur-demande h2,
+			table.formation-sur-demande h3{font-size:14px; /* color:#858585; */  color:#5D410F;}
+			
+			/* Autres annonces */
+			table.autres-annonces{}
+			table.autres-annonces h1,
+			table.autres-annonces h2,
+			table.autres-annonces h3{font-size:17px; color:#5D410F;}
+			
+			
+			
+			/* FIN corps message */
+			/*DEBUT Footer */
+			table#templateFooter, td.footerContent{ 
+				font-family:Arial;
+				 font-size:11px;
+				 line-height:125%;
+				 text-align:left;
+				 background-color:#f2f1ee;
+			}
+			
+			
+			table#templateFooter{margin:0 0 10px 0;}
+			td.footerContent{ padding:6px; }
+			td.footer-whois-tripleve{color:#666666;padding:8px 8px 8px 10px;}
+			
+			td.footer-whois-tripleve a, td.footer-whois-tripleve a:link{color:#666666;text-decoration:none;font-size:11px;}
+			td.footer-whois-tripleve a:active, td.footer-whois-tripleve a:hover{text-decoration:underline;font-size:11px;}
+			td.footer-whois-tripleve strong a{color:#333333;font-size:11px;}
+			td.footer-mailing-prefs{color:#000;border-left:5px solid #FFFFFF; padding:8px 8px 8px 12px; font-size:11px;}
+			td.footer-mailing-prefs a, td.footer-mailing-prefs a:link{color:#000000;text-decoration:none;font-size:11px;}
+			td.footer-mailing-prefs a:active, td.footer-mailing-prefs a:hover{color:#666666; text-decoration:underline;font-size:11px;}
+			
+			
+			table.alerte, table td.alerte, div.alerte, p.alerte{background-color:#FFFF33; border:1px solid red; padding:5px;}
+			div.alerte, p.alerte{font-size:12px;}

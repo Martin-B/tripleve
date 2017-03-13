@@ -1,0 +1,192 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Document de référence pour l'expédition de courriels hebdo</title>
+<link href="http://www.tripleve.com/gabarits/css/gabarit-courriel.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+h1{font-size:22px;}
+h2{font-size:18px;}
+h3{font-size:16px;}
+h4{font-size:14px;}
+body, div#box-contenu{font-family:Arial, Helvetica, sans-serif; font-size:12px;}
+div#box-contenu ul{}
+div#box-contenu ul li{margin: 0 0 1em 0;}
+.small{font-size:0.917em;}
+.smaller{font-size:0.86em;}
+.gris{color:#333333;}
+</style>
+</head>
+
+<body>
+<div style="margin:10px auto; background:#FFFFFF; width:600px; padding : 25px;" id="box-contenu">
+<h1>TripLevé - Pas à pas pour envoi de courriels hebdo</h1>
+<!-- DEBUT Separateur -->
+<img src="http://www.tripleve.com/gabarits/images/courriel/ui/pointilles-580.gif" alt="Section" width="580" height="7" class="separateur-section" />			
+<!-- FIN Separateur -->	
+<h2>1 - Préparation de l'environnement</h2>
+
+<ul>
+   <li>Lancer Dreamweaver et récupérer les dernières copies des archives en ligne pour les dossiers /gabarits
+      et /courriels à l'aide de la petite flèche verte dans le panneau Files (Get). Accepter les demandes
+      de confirmation d'écrasement des fichiers locaux au besoin et ne pas inclure les dépendances, do
+      not ask again. <br />
+	   <span class="gris small">L'idée de cette opération est de disposer des dermièrs modèles et des dernières
+	   publications dans le répertoire courriel dans le cas ou nous sommes plusieurs à diffuser, une pratique
+	   standard dans tout travail web collaboratif, afin d'éviter d'écraser le travail des autres sur
+	   le serveur avec une copie périmée d'un document. On présume toujoursque les documents finaux
+	   de production se trouvent sur le serveur et les copies en développment chez les collaborateurs.</span>  </li>
+   <li>Les fenêtres affichées dans Dreamweaver pour travailler sont les suivantes, au delà des documents
+      html actuellement ouverts, elles sont : Files, Properties et Snippets, on gère cet affichage via
+      le menu window. </li>
+   <li>Ouvrir <a href="http://www.tripleve.com/gabarits/courriel-vvv-template-base.html">le gabarit</a> depuis
+      le répertoire /gabarits/courriel-vvv-template-base.html et faire une copie de ce document dans
+      le répertoire /courriels en utilisant la nomenclature suivante : bulletin- aa-mm-jj.html</li>
+   <li>Le travail de formatage du bulletin peut commencer....  </li>
+</ul>
+<!-- DEBUT Separateur -->
+<img src="http://www.tripleve.com/gabarits/images/courriel/ui/pointilles-580.gif" alt="Section" width="580" height="7" class="separateur-section" />			
+<!-- FIN Separateur -->	
+<h2>2 - Préparation du squellete et des incontournables </h2>
+<ul>
+   <li>Recomposer l'<strong>adresse de ce bulletin</strong> à l'aide du nom de fichier établi à l'étape précédente et
+      l'affecter au lien tout en haut (Affichez-le dans votre fureteur) : Valider cette adresse dans
+      un fureteur et assurez-vous que dans le fureteur, un clic sur ce lien recharge le document actuel,
+      c'est le but de l'exercice et de cette mesure. Garder le bulletin en montage ouvert dans un onglet,
+      il servira à valilider les modifications en cours de montage. </li>
+   <li>Initialiser la <strong>date de diffusion</strong> du bulletin en gaut à gauche.</li>
+   <li>Choisir et optimiser une <strong>image pour l'entête du bulletin</strong>, le format est de 580
+      pixesl par 175 pixels et est contraint dans la feuille de style, inutile de forcer. Photoshop ou
+      Pixlr font la job. Sauvegarder une copie optimisée piour le web à 80% de qualité en jpeg. Une image
+      déficiente ou inadéquate à ce format est une image qu'on n'utilise pas pour le bulletin. </li>
+   <li><strong>Nommer l'image et la charger </strong>(sans accents, espaces ou caractères spéciaux)
+      dans le répertoire /courriels/images/mon-image.jpg. Faire un upload de cette image sur le serveur
+      web (flèche bleue, put) et recomposer l'adresse de l'Image. Sélectionner l'image en mode visuel,
+      et dans le champs &quot;Links&quot; de la boîte flottante Properties (par défaut en bas de l'écran) et modifier
+      le nom du fichier graphique seulement dans l'url. Cette modification peut aussi être faite en vue
+      split ou code dans la fenêtre principale de Dreamweaver. Il est sage de copier-coller ensuite l'url
+      complet de la nouvelle image dans un fureteur et de valider qu'on se rend à l'image. </li>
+   <li><strong>Affecter une légende à l'image</strong> dans la petite section (div.head-image-description)
+      qui la suit immédiatement. Une ligne de préférence mais flexible. Retours de chariot au besoin
+      avec Shift-Enter seulement. </li>
+   <li>Utiliser cette même légende pour l'<strong>attribut alt de l'image</strong> (image sélectionnée
+      en mode design, volet properties, champs Alt, coller, retour). </li>
+</ul>
+<!-- DEBUT Separateur -->
+<img src="http://www.tripleve.com/gabarits/images/courriel/ui/pointilles-580.gif" alt="Section" width="580" height="7" class="separateur-section" />			
+<!-- FIN Separateur -->	
+<h2>3 - Sélections des sections à conserver et planification</h2>
+<ul>
+   <li>Les<strong> 4 grandes sections</strong> sont les suivantes : Cette fin de semaine, Activités à venir, Formations
+      et sa sous-section Formations sur demande optionnele et finalement Autres annonces. L'ordre de
+      présentation de ces sections est songé.  </li>
+   <li><strong>Dresser la liste des contenus à diffuser</strong>, c-a-d qui ont une adresse sur le site Internet au moment
+      de l'envoi. </li>
+   <li><strong>Éliminer les sections et sous sections</strong> qui ne serviront pas. <br />
+      Pour ce faire et pour s'assurer de
+      faire des sélections propres, il est toujours souhaitable, une fois le curseur positionné dans
+         le pavé à éliminer en mode d'affichage design, de remonter le courant dans le sélecteur hiérarchique
+         jusqu'à l'élément html parent supérieur le plus lointain que l'on souhaite éliminer. <br />
+         <span class="small gris">Le sélecteur hiérarchique se trouve sous forme de fil d'ariane tout en bas à gauche de la fenêtre
+   de documents. </span></li>
+   <li><strong>Éliminer les séparteurs</strong> de section et sous sections redondants </li>
+</ul>
+<!-- DEBUT Separateur -->
+<img src="http://www.tripleve.com/gabarits/images/courriel/ui/pointilles-580.gif" alt="Section" width="580" height="7" class="separateur-section" />			
+<!-- FIN Separateur -->	
+<h2>4 - Collecte des contenus et hyperliens </h2>
+<ul>
+   <li><strong>Lancer un document texte brut</strong> (sans formatage) et entrer dans l'interface administrative
+      du site, dans Wordpress. Le but du document texte est d'éviter de parasiter les styles du document
+      html et les maux de tête. </li>
+   <li><strong>Visiter la page Articles</strong> dans l'interface administive et ouvrir dans des onglets chacun des billets
+      qu'on souhaite référencer dans le courriel.</li>
+   <li><strong>Pour chaque billet, récupérer le titre</strong>, le lien court (ex : http://www.tripleve.com/?p=2123),
+      la date de début et de fin et l'extrait court que l'on souhaite greffer dans le cas d'une formation
+      bel et bien à l'agenda ou d'une activité affichée dans le pavé Activités à venir du bulletin. Coller
+      ces valeurs dans le document texte et reprendrela routine pour chaque billet.</li>
+   <li><strong>Récupérer l'adresse des images à utiliser</strong> (format carré, section Activités à
+      vernir et Formations seulement). À cette fin, visiter la section bibliothèque de l'interface administrative
+      du site et ouvrir dans un onglet chaque image à exploiter en mode édition à l'aide du lien Modifier
+      dans la vue liste. Récupérer dans le presse papier l'adresse de l'image et la coller auprès du
+      billet apparié dan le document texte.</li>
+   <li><strong>Si on récapitule</strong>, pour chaque billet, on veut le titre, un court extrait, les dates, le lien
+      court vers le billet, l'adresse de l'image à greffer. Les sections et formations sur demande sont
+      moins exigeantes, sans extraits ni images. </li>
+   <li><strong>Transformer l'adresse de l'image</strong> afin d'aller chercher l'url du petit format
+      carré. Le suffixe du fichier doit être le suivant : -150x150.jpg.<br /> 
+      <span class="small gris">Par exemple, une image dont l'adresse est http://www.tripleve.com/wp-content/uploads/2011/04/veloparterre.jpg
+      deviendra http://www.tripleve.com/wp-content/uploads/2011/04/veloparterre-150x150.jpg</span></li>
+   </ul>
+	<!-- DEBUT Separateur -->
+<img src="http://www.tripleve.com/gabarits/images/courriel/ui/pointilles-580.gif" alt="Section" width="580" height="7" class="separateur-section" />			
+<!-- FIN Separateur -->	
+<h2>5 - Intéger les contenus </h2>
+<ul>
+   <li>De haut en bas, <strong>intéger les sections du bulletin</strong> une à la fois en respectant
+      le gabarit.</li>
+   <li><strong>Chaque ligne est affectée d'une classe</strong>, visible dans le sélecteur de styles en
+      bas de page quand le curseur est dans l'élément ET dans le sélecteur hiérarchique). Pour s'assurer
+      de ne pas supplanter le style avec le contenu collé, ne coller que depuis un document texte brut,
+      sans format pré-établi ni importation parasitaire de style externes. En cas de difficultés, conserver
+      la première lettre de l'élément avant de coller et nettoyex ensuite. </li>
+   <li><strong>Ajouter des séparateur au besoin</strong>, pour ce faire, utiliser l'interface snippets (window&gt;snippets
+      pour invoquer). Il est encore une fois requis de positionner adéquatement son curseur dans le contenu
+      à l'aide su sélecteur d'éléments hiérarchique. Une fois le bloc identifié et sélectionné, utiliser
+      les flèches droite et gauche au clavier afin de positioner le curseur avant ou après l'élément
+      et inséer le pavé de code mémorisé proprement. </li>
+   <li><strong>Ajouter des sections et sous-sections au besoin</strong> à l'aide de l'interface snippets, les snippets
+      ont des noms suffisamment clairs pour éviter la confusion. Les mêmes règles s'appliquent du pont
+      de vue de la sélection minutieuse des points d'insertion, un insertion mal enfantée créera un
+      bordel considérable, le undo devient crucial. </li>
+</ul>
+<!-- DEBUT Separateur -->
+<img src="http://www.tripleve.com/gabarits/images/courriel/ui/pointilles-580.gif" alt="Section" width="580" height="7" class="separateur-section" />			
+<!-- FIN Separateur -->	
+<h2>6 - Sauver et valider les liens et contenus en ligne </h2>
+<ul>
+   
+   <li><strong>Affichez le bulletin en ligne</strong> (lien Affichez-le dans votre fureteur) et passer minutiusement
+      sur chacun des hyperliens afin de valider que la destination est la bonne et que tous les textes
+      apparaîsent comme vous le souhaitez. </li>
+   <li><strong>Corriger les écarts de formatage</strong> en se servant des snippets et ou de la copie
+      originale du courriel comme modèle. Le menu déroulant au libellé style peut servir à redresser
+      certains affichages.</li>
+   <li><strong>Faire les retouches qui s'imposent</strong>.</li>
+</ul>
+<!-- DEBUT Separateur -->
+<img src="http://www.tripleve.com/gabarits/images/courriel/ui/pointilles-580.gif" alt="Section" width="580" height="7" class="separateur-section" />			
+<!-- FIN Separateur -->	
+<h2>7 - Transfomer les styles en intraligne, tester et expédier </h2>
+<ul>
+   
+   <li><strong>Visitez l'application web <a href="http://inlinestyler.torchboxapps.com/">Torchbox Inline
+            Styler</a></strong> et y rapporter l'url de notre bulletin en ligne, appuyer sur
+            le bouton convert. Récupérer le code source généré dans le pavé du bas dans le presse-papier.
+            Garder cet onglet ouvert. </li>
+   <li><strong>Lancer phplist et créer un nouveau message</strong>, lui donner un titre (selon la nomenclature habituelle
+      convenue) et coller tout le contenu généré par  Inline Styler dans le corps du message en vue
+      source (haut, gauche, bouton), retirer les notices de désabonnement et préférences en bas de page,
+      saisir les adresses courriel à utiliser pour l'envoi de courriels test et envoyer un test.</li>
+   <li><strong>Le test vous parviendra</strong> dans les quelques secondes qui suivent, validez-en les liens minutieusement,
+      la présence des images et de leur texte alternatif correctement initialisés, dernière révision
+      de texte. </li>
+   <li><strong>Dernières corrections</strong> : faites les changements qui s'imposent dans Dreamweaver,
+      sauvegarder et raffraichier le courriel dans le fureteur. </li>
+   <li><strong>Retourner dans le Inline styler</strong> et appuyer sur le bouton Convert Again.</li>
+   <li><strong>Rapporter à nouveau ces  contenus</strong> avec des styles intra-ligne dans le corps du
+      message sous phplist, option source. Enlever les notices de désabonnement avant la sauvegarde finale
+      et l'envoi. </li>
+   <li><strong>Tester une dernière fois et expédier</strong> à la liste Triplevé, traiter la file d'attente,
+      ne pas fermer la fenêtre du fureteur pour 40 minutes jusqu'à la fin de la cuisson.....   </li>
+</ul>
+<p>&nbsp;</p>
+<!-- DEBUT Separateur -->
+<img src="http://www.tripleve.com/gabarits/images/courriel/ui/pointilles-580.gif" alt="Section" width="580" height="7" class="separateur-section" />			
+<!-- FIN Separateur -->	
+<p align="center" class="small"><a href="http://www.tripleve.com/formation-documentation-web/expedition-courriel-hebdo.html">
+Adresse de ce document</a></p>
+</div>
+
+</body>
+</html>
