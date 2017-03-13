@@ -24,6 +24,7 @@ stats/
 # Settings files
 ###################
 wp-config.php
+wp-config*
 listes/config/config.php
 listes/config/
 listes/config/*
