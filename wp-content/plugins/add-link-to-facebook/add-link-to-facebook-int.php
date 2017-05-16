@@ -137,11 +137,17 @@ if (!class_exists('WPAL2Int')) {
 			return false;
 		}
 
+		// static function Process_fb_token($response) {
+		// 	$key = 'access_token=';
+		// 	$access_token = substr($response, strpos($response, $key) + strlen($key));
+		// 	$access_token = explode('&', $access_token);
+		// 	$access_token = $access_token[0];
+		// 	return $access_token;
+		// }
+
 		static function Process_fb_token($response) {
 			$key = 'access_token=';
-			$access_token = substr($response, strpos($response, $key) + strlen($key));
-			$access_token = explode('&', $access_token);
-			$access_token = $access_token[0];
+			$access_token = json_decode($response)->access_token;
 			return $access_token;
 		}
 
